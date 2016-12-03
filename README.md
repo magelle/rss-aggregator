@@ -37,7 +37,6 @@ Front:
 
 * Feed, a Stream of dated information (ex RSS, Atom)
   - Entry, a dated information (a post, a news, an entry)
-
 * Subscription
   - article
 
@@ -82,3 +81,10 @@ Front:
   - react redux
     - display static
     - display feed's entries
+
+## To Do
+- Studies Maven vs Gradle
+- Simple test server to query
+- Search for alternatives to Rome
+- Studies frameworks
+- Studies Spring boot
