@@ -33,3 +33,6 @@ dependencies {
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.6.1'
     testCompile group: 'org.mockito', name: 'mockito-core', version: '2.2.28'
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
