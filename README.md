@@ -14,6 +14,9 @@ Practice technologies
 
 ## Technologies
 
+Build:
+* Gradle
+
 Back:
 * Spring
 * CQRS (Axon)
@@ -25,6 +28,13 @@ Front:
 * Redux
 * TypeScript
 * Webpack
+
+Tools :
+* JUnit 4.12
+* AssertJ
+* Mockito
+* Wiremock: http://wiremock.org/
+* Rome
 
 ## Methodologies
 
@@ -83,8 +93,7 @@ Front:
     - display feed's entries
 
 ## To Do
-- Studies Maven vs Gradle
-- Simple test server to query
-- Search for alternatives to Rome
-- Studies frameworks
-- Studies Spring boot
+* Write first Integration test
+* Use ROME
+* Use Wiremock
+* Return Domain Object
