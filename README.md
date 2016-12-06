@@ -1,5 +1,7 @@
 # RSS Feeds
 
+[![Build Status][travis-image]][travis-url]
+
 RSS Feed aggregator
 
 ## Goal
@@ -97,3 +99,6 @@ Tools :
 * Use ROME
 * Use Wiremock
 * Return Domain Object
+
+[travis-image]: https://travis-ci.org/magelle/rss-aggregator.svg?branch=master
+[travis-url]: https://travis-ci.org/magelle/rss-aggregator.svg
