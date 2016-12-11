@@ -48,7 +48,7 @@ Tools :
 * Feed, a Stream of dated information (ex RSS, Atom)
   - Entry, a dated information (a post, a news, an entry)
 * Subscription
-  - article
+  - Article
 
 ## Functionalities
 
@@ -93,7 +93,6 @@ Tools :
     - display feed's entries
 
 ## To Do
-* Write first Integration test
+* Implementation living documentation
 * Use ROME
-* Use Wiremock
-* Return Domain Object
+* Use API REST and how to Test
