@@ -99,6 +99,7 @@ Tools :
 * Use ROME
 * Use Wiremock
 * Return Domain Object
+* Gradle multi module: https://docs.gradle.org/current/userguide/multi_project_builds.html
 
 [travis-image]: https://travis-ci.org/magelle/rss-aggregator.svg?branch=master
 [travis-url]: https://travis-ci.org/magelle/rss-aggregator.svg
