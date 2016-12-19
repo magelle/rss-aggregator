@@ -7,6 +7,7 @@ class SuperTest {
 
     @Test
     fun `The super test`() {
+        main(arrayOf())
         assertThat(true).isTrue()
     }
 }
