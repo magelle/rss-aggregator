@@ -1,6 +1,7 @@
 # RSS Feeds
 
 [![Build Status][travis-image]][travis-url]
+[![codecov](https://codecov.io/gh/magelle/rss-aggregator/branch/master/graph/badge.svg)](https://codecov.io/gh/magelle/rss-aggregator)
 
 RSS Feed aggregator
 
@@ -103,3 +104,5 @@ Tools :
 
 [travis-image]: https://travis-ci.org/magelle/rss-aggregator.svg?branch=master
 [travis-url]: https://travis-ci.org/magelle/rss-aggregator.svg
+[codev-image]:
+[codev-url]:
