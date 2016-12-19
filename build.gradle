@@ -41,5 +41,6 @@ jacocoTestReport {
     }
 }
 
+check.dependsOn jacocoTestReport
 task stage(dependsOn: ['build', 'clean', 'jacocoTestReport'])
 build.mustRunAfter clean
