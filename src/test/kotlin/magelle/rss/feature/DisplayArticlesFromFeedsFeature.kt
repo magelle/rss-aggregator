@@ -2,8 +2,6 @@ package magelle.rss.feature
 
 import com.github.tomakehurst.wiremock.client.WireMock.*
 import com.github.tomakehurst.wiremock.junit.WireMockRule
-import magelle.rss.domain.Subscription
-import org.assertj.core.api.Assertions.assertThat
 import org.junit.Rule
 import org.junit.Test
 
@@ -14,8 +12,7 @@ class DisplayArticlesFromFeedsFeature {
 
     @Test
     fun `should display articles from a feed`() {
-        stubFor(get(urlEqualTo("http://localhost:8089/feed"))
-                .withHeader("Accept", equalTo("text/xml"))
+        stubFor(get(urlEqualTo("/feed"))
                 .willReturn(aResponse()
                         .withStatus(200)
                         .withHeader("Content-Type", "text/xml")
@@ -39,15 +36,16 @@ class DisplayArticlesFromFeedsFeature {
     </channel>
 </rss>
 """)))
-        val subscription = Subscription("http://localhost:8089/feed")
 
-        val articles = subscription.articles
+        /*val feed = FeedCatalog().get("http://localhost:8089/feed")
+        val entries = feed.entries
 
-        assertThat(articles).isNotEmpty
-        assertThat(articles[0].title).isEqualTo("RSS Tutorial")
-        assertThat(articles[0].description).isEqualTo("RSS Tutorial")
+        assertThat(entries).isNotEmpty
+        assertThat(entries[0].title).isEqualTo("RSS Tutorial")
+        assertThat(entries[0].description).isEqualTo("RSS Tutorial")
 
-        assertThat(articles[1].title).isEqualTo("XML Tutorial")
-        assertThat(articles[1].description).isEqualTo("New XML tutorial on W3Schools")
+        assertThat(entries[1].title).isEqualTo("XML Tutorial")
+        assertThat(entries[1].description).isEqualTo("New XML tutorial on W3Schools")*/
     }
 }
+

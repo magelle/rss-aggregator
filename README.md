@@ -1,7 +1,7 @@
 # RSS Feeds
 
 [![Build Status][travis-image]][travis-url]
-[![codecov](https://codecov.io/gh/magelle/rss-aggregator/branch/master/graph/badge.svg)](https://codecov.io/gh/magelle/rss-aggregator)
+[![codecov][codecov-image]][codecov-url]
 
 RSS Feed aggregator
 
@@ -38,6 +38,10 @@ Tools :
 * Mockito
 * Wiremock: http://wiremock.org/
 * Rome
+* jax-rs client : https://docs.oracle.com/javaee/7/tutorial/jaxrs-client001.htm
+
+* https://jersey.java.net
+* https://github.com/OpenFeign/feign
 
 ## Methodologies
 
@@ -96,9 +100,15 @@ Tools :
     - display feed's entries
 
 ## To Do
+* Retour DDD Arnaud Lemaire
+* Test REST API : jax-ws client
+* Choose a REST library
+* A Rest Resource that return the feed
+
 * Implementation living documentation
-* Use ROME
-* Use API REST and how to Test
+* Gradle : multi-modules
 
 [travis-image]: https://travis-ci.org/magelle/rss-aggregator.svg?branch=master
 [travis-url]: https://travis-ci.org/magelle/rss-aggregator.svg
+[codecov-image]: https://codecov.io/gh/magelle/rss-aggregator/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/magelle/rss-aggregator
