@@ -109,6 +109,6 @@ Tools :
 * Gradle : multi-modules
 
 [travis-image]: https://travis-ci.org/magelle/rss-aggregator.svg?branch=master
-[travis-url]: https://travis-ci.org/magelle/rss-aggregator.svg
+[travis-url]: https://travis-ci.org/magelle/rss-aggregator
 [codecov-image]: https://codecov.io/gh/magelle/rss-aggregator/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/magelle/rss-aggregator
