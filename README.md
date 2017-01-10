@@ -100,10 +100,9 @@ Tools :
     - display feed's entries
 
 ## To Do
-* Retour DDD Arnaud Lemaire
-* Test REST API : jax-ws client
-* Choose a REST library
-* A Rest Resource that return the feed
+* Test REST API : jax-ws client - Done
+* Choose a REST library : Dropwizard
+* A Rest Resource that return the feed - To be done
 
 * Implementation living documentation
 * Gradle : multi-modules

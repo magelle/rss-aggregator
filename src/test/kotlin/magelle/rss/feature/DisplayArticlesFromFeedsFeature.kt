@@ -2,8 +2,11 @@ package magelle.rss.feature
 
 import com.github.tomakehurst.wiremock.client.WireMock.*
 import com.github.tomakehurst.wiremock.junit.WireMockRule
+import org.assertj.core.api.Assertions
 import org.junit.Rule
 import org.junit.Test
+import javax.ws.rs.client.ClientBuilder
+import javax.ws.rs.core.MediaType
 
 class DisplayArticlesFromFeedsFeature {
 
@@ -37,15 +40,12 @@ class DisplayArticlesFromFeedsFeature {
 </rss>
 """)))
 
-        /*val feed = FeedCatalog().get("http://localhost:8089/feed")
-        val entries = feed.entries
+        val client = ClientBuilder.newClient()
+        val response = client.target("http://localhost:8080/entries")
+                .request(MediaType.APPLICATION_JSON_TYPE)
+                .get(String::class.java)
 
-        assertThat(entries).isNotEmpty
-        assertThat(entries[0].title).isEqualTo("RSS Tutorial")
-        assertThat(entries[0].description).isEqualTo("RSS Tutorial")
-
-        assertThat(entries[1].title).isEqualTo("XML Tutorial")
-        assertThat(entries[1].description).isEqualTo("New XML tutorial on W3Schools")*/
+        Assertions.assertThat(response).isEqualTo("""[{ "title": "RSS Tutorial", "content":"New RSS tutorial on W3Schools" },{ "title": "XML Tutorial", "content":"New XML tutorial on W3Schools" }]""")
     }
 }
 
